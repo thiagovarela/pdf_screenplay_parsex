@@ -182,4 +182,30 @@ defmodule BrickAndSteelClassificationTest do
            #{actual_output}
            """
   end
+
+  test "interstellar final snapshot" do
+    # Read the PDF and parse it
+    {:ok, pdf_binary} = File.read("test/fixtures/Interstellar-Final.pdf")
+
+    {:ok, classified_pages} =
+      PdfScreenplayParsex.ScreenplayClassifier.classify_screenplay(pdf_binary)
+
+    # Get the formatted output
+    actual_output = PdfScreenplayParsex.ScreenplayClassifier.dump_content(classified_pages)
+
+    # Read expected output from fixture
+    {:ok, expected_output} = File.read("test/fixtures/interstellar_final.txt")
+
+    # Compare exact match
+    assert actual_output == expected_output,
+           """
+           dump_content output does not match fixture file.
+
+           Expected (from fixture):
+           #{expected_output}
+
+           Actual (from dump_content):
+           #{actual_output}
+           """
+  end
 end

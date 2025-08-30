@@ -52,7 +52,7 @@ defmodule Mix.Tasks.ParsePdf do
 
   defp parse_pdf(pdf_file, output_file, format) do
     # Start required applications
-    Application.ensure_all_started(:pythonx)
+    Application.ensure_all_started(:pdf_screenplay_parsex)
 
     case File.read(pdf_file) do
       {:ok, binary} ->
@@ -61,10 +61,11 @@ defmodule Mix.Tasks.ParsePdf do
 
         output_content = case format do
           "text" ->
-            # Original text format using classifier directly
-            case PdfScreenplayParsex.ScreenplayClassifier.classify_screenplay(binary) do
-              {:ok, pages} ->
-                {:ok, PdfScreenplayParsex.ScreenplayClassifier.dump_content(pages)}
+            # Use structured parsing then convert back to groups format for proper text spacing
+            case PdfScreenplayParsex.parse_structured(binary) do
+              {:ok, script} ->
+                # Convert to text using a dedicated function that preserves spacing
+                {:ok, PdfScreenplayParsex.script_to_text(script)}
 
               {:error, reason} ->
                 {:error, reason}
@@ -107,7 +108,8 @@ defmodule Mix.Tasks.ParsePdf do
             end
 
           {:error, reason} ->
-            IO.puts("Error parsing PDF: #{reason}")
+            error_message = format_error(reason)
+            IO.puts("Error parsing PDF: #{error_message}")
             System.halt(1)
         end
 
@@ -116,4 +118,11 @@ defmodule Mix.Tasks.ParsePdf do
         System.halt(1)
     end
   end
+
+  # Helper function to format error messages
+  defp format_error(%PdfScreenplayParsex.Errors.ValidationError{message: message}), do: message
+  defp format_error(%PdfScreenplayParsex.Errors.PDFError{message: message}), do: message
+  defp format_error(%PdfScreenplayParsex.Errors.ClassificationError{message: message}), do: message
+  defp format_error(error) when is_binary(error), do: error
+  defp format_error(error), do: inspect(error)
 end

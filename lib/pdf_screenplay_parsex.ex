@@ -313,6 +313,85 @@ defmodule PdfScreenplayParsex do
 
   defp extract_title(_), do: nil
 
+  # Check if first page contains any scene headings
+  defp first_page_has_scene_headings?(pages) when is_list(pages) do
+    case List.first(pages) do
+      %Page{elements: elements} ->
+        Enum.any?(elements, fn element ->
+          Map.get(element, :type) == :scene_heading
+        end)
+      
+      _ -> false
+    end
+  end
+
+  # Check if second page needs OPENING scene heading inserted
+  defp second_page_needs_opening?(pages) when is_list(pages) do
+    case Enum.at(pages, 1) do
+      %Page{elements: elements} when is_list(elements) ->
+        case List.first(elements) do
+          nil -> false  # No elements on second page
+          first_element ->
+            # First element is not a scene heading or transition
+            first_element_type = Map.get(first_element, :type)
+            first_element_type != :scene_heading && first_element_type != :transition
+        end
+      
+      _ -> false  # No second page or invalid structure
+    end
+  end
+
+  # Create OPENING scene heading TextElement with proper positioning
+  defp create_opening_scene_heading(second_page_elements) do
+    # Calculate Y position based on first element of second page, or use default
+    y_position = case List.first(second_page_elements) do
+      nil -> 144.0  # Default Y position if no elements
+      first_element -> first_element.y - 24.0  # Position above first element
+    end
+
+    %PdfScreenplayParsex.TextElement{
+      text: "OPENING",
+      type: :scene_heading,
+      x: 72.0,  # Standard scene heading x position
+      y: y_position,
+      width: 70.0,  # Approximate width for "OPENING"
+      height: 12.0,
+      font_size: 12.0,
+      font_name: "Arial",
+      gap_to_prev: nil,
+      gap_to_next: 12.0,  # Standard gap after scene heading
+      centered: false,
+      is_dual_dialogue: false
+    }
+  end
+
+  # Add OPENING scene heading to pages if conditions are met
+  defp maybe_add_opening_scene_heading(pages) when is_list(pages) do
+    # Only proceed if we have at least 2 pages
+    if length(pages) >= 2 do
+      first_page_has_scene_heading = first_page_has_scene_headings?(pages)
+      second_page_needs_opening = second_page_needs_opening?(pages)
+      
+      if not first_page_has_scene_heading and second_page_needs_opening do
+        # Get the second page
+        second_page = Enum.at(pages, 1)
+        
+        # Create OPENING scene heading
+        opening_element = create_opening_scene_heading(second_page.elements)
+        
+        # Update second page with OPENING prepended to elements
+        updated_second_page = %{second_page | elements: [opening_element | second_page.elements]}
+        
+        # Replace second page in the list
+        List.replace_at(pages, 1, updated_second_page)
+      else
+        pages
+      end
+    else
+      pages
+    end
+  end
+
   # Private functions for input validation and processing
 
   @spec validate_pdf_binary(binary()) :: :ok | {:error, Errors.ValidationError.t()}
@@ -395,6 +474,7 @@ defmodule PdfScreenplayParsex do
                   raw_elements: []
                 }
               end)
+              |> maybe_add_opening_scene_heading()
 
             # Extract title from first page
             title = extract_title(structured_pages)
@@ -422,6 +502,72 @@ defmodule PdfScreenplayParsex do
           details: %{reason: reason}
         }
     end
+  end
+
+  @doc """
+  Converts a Script struct to readable text format with proper spacing.
+
+  Takes a Script struct and returns a formatted string with proper spacing
+  between screenplay elements, preserving the natural grouping structure.
+
+  ## Parameters
+    * `script` - A %Script{} struct from parse_structured/1
+
+  ## Returns
+    A formatted string with proper spacing between element groups
+
+  ## Examples
+
+      iex> {:ok, script} = PdfScreenplayParsex.parse_structured(pdf_binary)
+      iex> text = PdfScreenplayParsex.script_to_text(script)
+  """
+  def script_to_text(%Script{pages: pages}) do
+    # Convert pages back to a format with proper grouping for text display
+    # We need to reconstruct logical groups based on element types and positioning
+    pages
+    |> Enum.flat_map(&group_page_elements_for_text/1)
+    |> Enum.map(fn group ->
+      group
+      |> Enum.map(&format_element_for_text/1)
+      |> Enum.join("\n")
+    end)
+    |> Enum.join("\n\n")  # Double newline between groups
+  end
+
+  # Group elements within a page based on natural screenplay structure
+  defp group_page_elements_for_text(%Page{elements: elements}) do
+    # Group elements by natural breaks in screenplay format
+    elements
+    |> Enum.chunk_by(&element_starts_new_group?/1)
+    |> Enum.reduce([], fn chunk, acc ->
+      case chunk do
+        # If chunk starts with a group-starting element, it's a new group
+        [first_element | _] = group ->
+          if element_starts_new_group?(first_element) do
+            acc ++ [group]
+          else
+            # Add to the last group or create new if empty
+            case acc do
+              [] -> [group]  # First group
+              groups -> List.update_at(groups, -1, fn last_group -> last_group ++ group end)
+            end
+          end
+        
+        # Empty group case (shouldn't happen with chunk_by, but being safe)
+        [] ->
+          acc
+      end
+    end)
+  end
+
+  # Determine if an element should start a new group (and thus have spacing before it)
+  defp element_starts_new_group?(%TextElement{type: type}) do
+    type in [:scene_heading, :transition, :character, :centered]
+  end
+
+  # Format individual elements for text output
+  defp format_element_for_text(%TextElement{type: type, text: text}) do
+    "[#{type}] #{text}"
   end
 
   @doc """
