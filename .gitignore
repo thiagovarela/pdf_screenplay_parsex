@@ -28,3 +28,4 @@ pdf_screenplay_parsex-*.tar
 .expert
 .elixir_ls
 .claude
+.DS_Store
