@@ -54,7 +54,7 @@ defmodule PdfScreenplayParsex do
   """
 
   # Configuration constants
-  @max_pdf_size_mb 100
+  @max_pdf_size_mb 15
   @max_pdf_size_bytes @max_pdf_size_mb * 1024 * 1024
   @min_pdf_size_bytes 1024
   # "%PDF"
@@ -320,8 +320,9 @@ defmodule PdfScreenplayParsex do
         Enum.any?(elements, fn element ->
           Map.get(element, :type) == :scene_heading
         end)
-      
-      _ -> false
+
+      _ ->
+        false
     end
   end
 
@@ -330,36 +331,47 @@ defmodule PdfScreenplayParsex do
     case Enum.at(pages, 1) do
       %Page{elements: elements} when is_list(elements) ->
         case List.first(elements) do
-          nil -> false  # No elements on second page
+          # No elements on second page
+          nil ->
+            false
+
           first_element ->
             # First element is not a scene heading or transition
             first_element_type = Map.get(first_element, :type)
             first_element_type != :scene_heading && first_element_type != :transition
         end
-      
-      _ -> false  # No second page or invalid structure
+
+      # No second page or invalid structure
+      _ ->
+        false
     end
   end
 
   # Create OPENING scene heading TextElement with proper positioning
   defp create_opening_scene_heading(second_page_elements) do
     # Calculate Y position based on first element of second page, or use default
-    y_position = case List.first(second_page_elements) do
-      nil -> 144.0  # Default Y position if no elements
-      first_element -> first_element.y - 24.0  # Position above first element
-    end
+    y_position =
+      case List.first(second_page_elements) do
+        # Default Y position if no elements
+        nil -> 144.0
+        # Position above first element
+        first_element -> first_element.y - 24.0
+      end
 
     %PdfScreenplayParsex.TextElement{
       text: "OPENING",
       type: :scene_heading,
-      x: 72.0,  # Standard scene heading x position
+      # Standard scene heading x position
+      x: 72.0,
       y: y_position,
-      width: 70.0,  # Approximate width for "OPENING"
+      # Approximate width for "OPENING"
+      width: 70.0,
       height: 12.0,
       font_size: 12.0,
       font_name: "Arial",
       gap_to_prev: nil,
-      gap_to_next: 12.0,  # Standard gap after scene heading
+      # Standard gap after scene heading
+      gap_to_next: 12.0,
       centered: false,
       is_dual_dialogue: false
     }
@@ -371,17 +383,17 @@ defmodule PdfScreenplayParsex do
     if length(pages) >= 2 do
       first_page_has_scene_heading = first_page_has_scene_headings?(pages)
       second_page_needs_opening = second_page_needs_opening?(pages)
-      
+
       if not first_page_has_scene_heading and second_page_needs_opening do
         # Get the second page
         second_page = Enum.at(pages, 1)
-        
+
         # Create OPENING scene heading
         opening_element = create_opening_scene_heading(second_page.elements)
-        
+
         # Update second page with OPENING prepended to elements
         updated_second_page = %{second_page | elements: [opening_element | second_page.elements]}
-        
+
         # Replace second page in the list
         List.replace_at(pages, 1, updated_second_page)
       else
@@ -531,7 +543,8 @@ defmodule PdfScreenplayParsex do
       |> Enum.map(&format_element_for_text/1)
       |> Enum.join("\n")
     end)
-    |> Enum.join("\n\n")  # Double newline between groups
+    # Double newline between groups
+    |> Enum.join("\n\n")
   end
 
   # Group elements within a page based on natural screenplay structure
@@ -548,11 +561,12 @@ defmodule PdfScreenplayParsex do
           else
             # Add to the last group or create new if empty
             case acc do
-              [] -> [group]  # First group
+              # First group
+              [] -> [group]
               groups -> List.update_at(groups, -1, fn last_group -> last_group ++ group end)
             end
           end
-        
+
         # Empty group case (shouldn't happen with chunk_by, but being safe)
         [] ->
           acc
