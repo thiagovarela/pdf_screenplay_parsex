@@ -1,0 +1,648 @@
+[title] FOR A FEW DAYS MORE
+
+[author_marker] Written by
+
+[author_names] April Rider
+
+[contact] [NOTE: A typical title page may look like this. For the Academy Nicholl Fellowships 
+[notes] competition, you should eliminate all instances of your name, address, phone number and 
+[notes] email address from the title page and all other pages of the screenplay. Only the title of the 
+[copyright] screenplay is needed. It is also permissible to include a U.S. Copyright Office or WGA 
+[notes] registration number on the title page (though registration is not a requirement).]
+
+[author_names] April Rider             
+[author_names] 999 George Kaplan St NNW
+[author_names] Hitchcock, SD 57000     
+[author_names] 605-555-5555            
+[author_names] April@nowhere.com       
+
+[author_marker] [This format guide was originally written by Greg Beal in 1996 and has been revised several 
+[author_marker] times by him since then, most recently in February, 2014.]
+
+[transition] FADE IN:
+
+[scene_heading] INT. DRISKILL HOTEL SEMINAR ROOM - DAY
+
+[action] JOE and APRIL burst through the doors into a clean, well-lit 
+[action] seminar room.
+
+[character] JOE
+[dialogue] Are we in time?
+
+[character] APRIL
+[dialogue] How could they start without us? 
+[dialogue] We’re the main attraction.
+
+[action] Joe catches his breath as he leans against the podium at the 
+[action] front of the room.
+
+[character] JOE
+[dialogue] (looking about          
+[dialogue] the room)
+[dialogue] We are?
+
+[character] APRIL
+[dialogue] Don’t be an idiot. You know we’ve 
+[dialogue] been invited to Austin to discuss 
+[dialogue] script format.
+
+[character] JOE
+[dialogue] But why is the room empty?
+
+[action] April and Joe look out across the room - rows of empty chairs 
+[action] and nary a person in sight.
+
+[character] APRIL
+[dialogue] Okay, okay. Don’t panic.
+
+[action] She takes three deep breaths. Then April looks at her watch 
+[action] and smiles.
+
+[character] APRIL (CONT’D)
+[dialogue] We’re an hour early. . . . We 
+[dialogue] should rehearse.
+
+[character] JOE
+[dialogue] Okay, you start. Margins?
+
+[character] APRIL
+[dialogue] Left, 1.5 inches. Right, 1.0 
+[dialogue] inches. Top, 1.0 inches to the 
+[dialogue] body, 0.5 inches to the number. 
+[dialogue] Bottom, 0.5 to 1.5 inches, 
+[dialogue] depending upon where the page break 
+[dialogue] comes.
+
+[character] JOE
+[dialogue] Page break?
+
+[character] APRIL
+[dialogue] Right above you. There are rules 
+[dialogue] for breaking a page. Scene headers 
+[dialogue] remain attached to description. A 
+[dialogue] single line of dialogue is pushed 
+[dialogue] to the following page. A long 
+[dialogue] dialogue passage would be split - 
+[dialogue] but I’ll get to that later.
+
+[character] JOE
+[dialogue] What about fonts?
+
+[character] APRIL
+[dialogue] Courier, 12-point, 10-pitch. Make 
+[dialogue] sure it’s a non-proportional 
+[dialogue] version of Courier and avoid 
+[dialogue] Courier New unless you want your 
+[dialogue] script to be about 10% longer.
+
+[character] JOE
+[dialogue] What about bold-face or italics? Or 
+[dialogue] a cool font like Garamond? I love 
+[dialogue] to jazz up my scripts.
+
+[character] APRIL
+[dialogue] Mostly, you should steer clear of 
+[dialogue] bold and italics. Definitely no 
+[dialogue] Garamond, no Helvetica, no Times 
+[dialogue] Roman. Stick with Courier. That’s 
+[dialogue] the industry standard.
+
+[character] JOE
+[dialogue] Ah . . . we’re talking about 
+[dialogue] industry standards.
+
+[] Suddenly, Joe bolts from behind the podium and runs out into:
+
+[scene_heading] INT. DRISKILL HOTEL HALLWAY - DAY
+
+[action] Joe glances up and down the hallway, then reaches back to 
+[action] open the door.
+
+[character] JOE
+[parenthetical] (calling)
+[dialogue] April - come on! There’s no one 
+[dialogue] here.
+[page_number] 2.
+
+[character] APRIL
+[dialogue] (walking through          
+[dialogue] the door)
+[dialogue] A scene heading. Or a slug line, as 
+[dialogue] I was taught in film school. Always 
+[dialogue] CAPPED. Usually begins with INT. or 
+[dialogue] EXT. What happens if we --
+
+[scene_heading] EXT. TEXAS CAPITOL BUILDING - DAY
+
+[action] Joe looks startled as he stands with April before the seat of 
+[action] Texas politics.
+
+[character] JOE
+[dialogue] How’d you do that?
+
+[character] APRIL
+[dialogue] There was a cut - from the hallway 
+[dialogue] to the capitol. What’d you want to 
+[dialogue] do - ride in a cab?
+
+[character] JOE
+[dialogue] Dialogue margins. 
+
+[character] APRIL
+[dialogue] Left, 2.5 inches. Right, 2.5 
+[dialogue] inches. Of course, you can cheat 
+[dialogue] those a tad.
+
+[character] JOE
+[dialogue] So, you have about 3.5 inches for 
+[dialogue] each line of dialogue?
+
+[character] APRIL
+[dialogue] You’ve got it. And you can sneak 
+[dialogue] out another character or two to the 
+[dialogue] right and no one will hold it 
+[dialogue] against you.
+
+[action] Joe jots down notes on a 3 x 5 card, studies the card for a 
+[action] moment, then scribbles another note.
+
+[character] JOE
+[parenthetical] (looking up)
+[dialogue] And the position of the character’s 
+[dialogue] name?
+
+[character] APRIL
+[dialogue] ALL CAPS, and tabbed to about 4.0 
+[dialogue] to 4.2 inches, depending upon the 
+[dialogue] look you like. Some writers center 
+[dialogue] all characters’ names in dialogue. 
+[dialogue] Personally, I don’t think it 
+[dialogue] matters too much. 
+[page_number] 3.
+
+[centered] (MORE)
+
+[character] APRIL (CONT'D)
+[dialogue] The appearance of the script pages 
+[dialogue] is slightly different in each case, 
+[dialogue] but all are within the norm.
+
+[character] JOE
+[dialogue] Hey! What happened?
+
+[character] APRIL
+[dialogue] A page break appeared in the middle 
+[dialogue] of my dialogue. You use (MORE) at 
+[dialogue] the bottom of the page to show that 
+[dialogue] the character’s dialogue continues 
+[dialogue] onto the next page. Then add 
+[dialogue] (CONT’D) after the character’s name 
+[dialogue] to show that the lines have roots 
+[dialogue] in the previous page.
+
+[character] JOE
+[dialogue] But not everyone uses MOREs and 
+[dialogue] CONT’Ds, do they?
+
+[scene_heading] INT. CAPITOL BUILDING - DAY
+
+[action] Joe stares up into the dome. April examines the portraits of 
+[action] Texas governors on the nearby walls.
+
+[character] APRIL
+[dialogue] Some writers just plan their page 
+[dialogue] breaks so as to avoid them.
+
+[character] JOE
+[parenthetical] (considering)
+[dialogue] What about parentheticals?
+
+[character] APRIL
+[dialogue] Start them about 0.5 inches to the 
+[dialogue] left of the character name tab 
+[dialogue] mark. In our case, that would be at 
+[dialogue] 3.0 inches.
+
+[character] JOE
+[dialogue] And what are they for?
+
+[character] APRIL
+[dialogue] For years, parentheticals were used 
+[dialogue] to express emotion, the manner in 
+[dialogue] which a character spoke her lines. 
+[dialogue] Loudly, passionately, sadly, and so 
+[dialogue] on. That’s frowned upon these days, 
+[dialogue] but some writers still use them for 
+[dialogue] bits of action.
+[page_number] 4.
+
+[character] APRIL (CONT'D)
+
+[character] JOE
+[dialogue] (going up a          
+[dialogue] stairway)
+[dialogue] Something like this?
+
+[character] APRIL
+[parenthetical] (following him)
+[dialogue] Exactly.
+
+[character] JOE
+[dialogue] How wide are parentheticals?
+
+[character] APRIL
+[dialogue] Not very - about 1.5 inches. And 
+[dialogue] they should wrap to the following 
+[dialogue] line when they extend beyond that 
+[dialogue] point.
+[dialogue] (pointing to the        
+[dialogue] top of the page)
+[dialogue] If you place a parenthetical in the 
+[dialogue] middle of a dialogue passage, it 
+[dialogue] should remain distinct from the 
+[dialogue] dialogue.
+
+[scene_heading] EXT. MISSISSIPPI RIVERBOAT - NIGHT
+
+[action] A gambling boat is docked along the riverfront. April and Joe 
+[action] wander about its upper deck.
+
+[character] JOE
+[dialogue] I have to ask. What happened to CUT 
+[dialogue] TO:s between scenes.
+
+[character] APRIL
+[dialogue] Some writers still use transitions 
+[dialogue] such as CUT TO: and DISSOLVE TO: 
+[dialogue] between scenes.
+
+[character] JOE
+[dialogue] Those would introduce a new scene 
+[dialogue] header?
+
+[character] APRIL
+[dialogue] And typically a different place 
+[dialogue] and/or time. But many writers have 
+[dialogue] dispensed with such transitions, 
+[dialogue] feeling that a new scene header 
+[dialogue] clearly signifies a cut without the 
+[dialogue] need of any additional indicator.
+
+[action] Joe gazes out at the river.
+[page_number] 5.
+
+[character] JOE
+[dialogue] How did we reach the Mississippi 
+[dialogue] and when did the sun set?
+
+[character] APRIL
+[dialogue] If you’d rather . . .
+
+[scene_heading] EXT. AIRPLANE - SUNSET
+
+[action] A jet liner cruises across Texas towards the setting sun.
+
+[scene_heading] INT. AIRPLANE
+
+[action] A customized interior, outfitted with leather chairs and 
+[action] sofas. April and Joe sip salt-encrusted margaritas.
+
+[character] JOE
+[dialogue] Is this a flashback?
+
+[character] APRIL
+[dialogue] Or it could be tomorrow or next 
+[dialogue] month?
+
+[action] TITLE OVER:
+
+[] October 25, 2014
+
+[character] APRIL (CONT’D)
+[dialogue] You see, a whole year has passed.
+
+[character] JOE
+[dialogue] Okay, I didn’t notice. But I 
+[dialogue] thought only DAY and NIGHT were 
+[dialogue] allowed in scene headers.
+
+[character] APRIL
+[dialogue] Production managers might prefer it 
+[dialogue] that way, but many writers use 
+[dialogue] headers as a means of depicting a 
+[dialogue] particular time of day. For 
+[dialogue] instance, SUNRISE, DAWN, LATE 
+[dialogue] AFTERNOON and SUNSET.
+
+[character] JOE
+[dialogue] That’s allowed?
+
+[character] APRIL
+[dialogue] On a writer’s draft, without a 
+[dialogue] doubt.
+
+[character] JOE
+[dialogue] A writer’s draft?
+[page_number] 6.
+
+[character] APRIL
+[dialogue] Essentially, any draft that hasn’t 
+[dialogue] been paid for. A draft to be 
+[dialogue] submitted to agents, managers, 
+[dialogue] producers, development execs. Or 
+[dialogue] even to a screenplay competition. 
+[dialogue] Those are writer’s drafts. And they 
+[dialogue] should all be FIRST DRAFTs, no 
+[dialogue] matter how many versions the writer 
+[dialogue] has actually written.
+
+[character] JOE
+[dialogue] You really think so?
+
+[character] APRIL
+[dialogue] That’s my recommendation.
+
+[scene_heading] INT. BLUE CAMARO - DAY
+
+[action] April drives along Austin’s Congress Avenue as Joe rides 
+[action] shotgun.
+
+[character] JOE
+[dialogue] You speak any foreign languages?
+
+[character] APRIL
+[parenthetical] (in French)
+[dialogue] Of course, I do. Why do you ask?
+
+[character] JOE
+[dialogue] What about action sequences?
+
+[action] SUDDENLY, A BLACK MUSTANG
+
+[action] Whips around a corner, racing quickly towards them.
+
+[subheading] APRIL
+
+[action] Punches the accelerator and --
+
+[subheading] THE BLUE CAMARO
+
+[action] Leaps forward, laying a trail of rubber. The Camaro takes a 
+[action] screeching left, then a quick right to accelerate into --
+
+[action] AN ALLEY BURIED IN DEEP SHADOWS
+
+[action] Where the Camaro all too quickly runs into a dead end, just 
+[action] as --
+
+[subheading] THE BLACK MUSTANG
+
+[action] Roars into the alley, sealing it shut.
+[page_number] 7.
+
+[subheading] APRIL
+
+[action] Looks to Joe, fear filling his eyes.
+
+[scene_heading] EXT. DRISKILL HOTEL PORTICO - DAY
+
+[action] April guides a dazed and confused Joe from the Camaro towards 
+[action] the front doors held open by a smiling VALET.
+
+[character] APRIL
+[dialogue] That’s one way to write an action 
+[dialogue] scene. It’s a variation on the Bill 
+[dialogue] Goldman style used by many pros.
+
+[character] JOE
+[parenthetical] (coming to)
+[dialogue] But other writers just use standard 
+[dialogue] scene headers and description for 
+[dialogue] action scenes, don’t they?
+
+[character] APRIL
+[dialogue] Many do.
+
+[scene_heading] INT. DRISKILL HOTEL LOBBY - DAY
+
+[action] A confused Joe speaks into a house phone.
+
+[character] JOE
+[dialogue] I thought we were walking together.
+
+[character] APRIL (O.S.)
+[parenthetical] (filtered)
+[dialogue] Well, we were, but I realized a 
+[dialogue] phone call was needed.
+
+[character] JOE
+[dialogue] You’re filtered?
+
+[] INTERCUT WITH:
+
+[scene_heading] EXT. STATE CAPITOL - DAY
+
+[action] With the capitol dome looming large behind her, April speaks 
+[action] on her mobile phone.
+
+[character] APRIL
+[dialogue] Only when you hear my voice over 
+[dialogue] the phone. Radio voices and phone 
+[dialogue] calls can be filtered, though it’s 
+[dialogue] a convention that isn’t used as 
+[dialogue] much these days.
+[page_number] 8.
+
+[character] JOE
+[dialogue] Let’s try something easy. What 
+[dialogue] about page numbers?
+
+[character] APRIL
+[dialogue] Number each and every page, though 
+[dialogue] you can start with page two. The 
+[dialogue] numbers should appear in the upper 
+[dialogue] right-hand corner, about 0.5 inches 
+[dialogue] down and 0.75 inches from the right 
+[dialogue] page edge. Those dimensions are not 
+[dialogue] set in stone, but the page numbers 
+[dialogue] should always be placed in the 
+[dialogue] upper right-hand corner.
+
+[scene_heading] INT. DRISKILL HOTEL HALLWAY - DAY
+
+[action] Joe strolls slowly towards the seminar room.
+
+[character] JOE
+[dialogue] You know, that pronouncement almost 
+[dialogue] seemed godlike.
+
+[character] APRIL (V.O.)
+[dialogue] If it were, I probably would have 
+[dialogue] spoken in a voice-over and not on 
+[dialogue] the phone.
+
+[action] Joe searches the hallway, trying to decide just where this 
+[action] disembodied voice is emanating from.
+
+[character] JOE
+[dialogue] What’s a V.O. used for?
+
+[character] APRIL (V.O.)
+[dialogue] Often for narration, for a 
+[dialogue] narrator’s voice. In film noir, the 
+[dialogue] protagonists often filled the 
+[dialogue] audience in on their thoughts or 
+[dialogue] story details. Scorsese films are 
+[dialogue] often filled with voice-over, as 
+[dialogue] are many documentaries.
+
+[scene_heading] INT. DRISKILL HOTEL SEMINAR ROOM - DAY
+
+[action] Joe races past April to reach the podium first. April walks 
+[action] casually past the still-empty chairs.
+
+[action] At the podium Joe gestures with his hands as if he were 
+[action] delivering a major political speech.
+
+[action] April sneaks up behind him and mimics his gestures - until he 
+[action] notices. Joe spins to confront her.
+[page_number] 9.
+
+[character] JOE
+[dialogue] Why I ought’a . . .
+
+[character] APRIL
+[dialogue] I was simply demonstrating the way 
+[dialogue] many writers break descriptions 
+[dialogue] into shorter paragraphs. As opposed 
+[dialogue] to allowing description to fill 
+[dialogue] dense blocks running on for lines.
+
+[character] JOE
+[dialogue] That makes for tougher reading, 
+[dialogue] doesn’t it?
+
+[character] APRIL
+[dialogue] I know studio readers who claim 
+[dialogue] they skip long description passages 
+[dialogue] and only read dialogue.
+
+[character] JOE
+[dialogue] But there are pros who write 
+[dialogue] scripts with extended description.
+
+[character] APRIL
+[dialogue] They do - but that doesn’t mean you 
+[dialogue] should too. When you’re paid to 
+[dialogue] write a screenplay, you just have 
+[dialogue] to satisfy the people writing your 
+[dialogue] checks.
+
+[action] Joe balances on one leg atop the podium.
+
+[character] JOE
+[dialogue] But when you’re like me, you should 
+[dialogue] stick to format. Is that what 
+[dialogue] you’re trying to say?
+
+[character] APRIL
+[dialogue] You just want to make your script 
+[dialogue] as easy a read as possible.
+
+[action] Joe jumps down from the podium and hustles out the door just 
+[action] as conference ATTENDEES begin to enter.
+
+[character] APRIL (CONT’D)
+[dialogue] By the way, the first time you 
+[dialogue] introduce a character in 
+[dialogue] description, you CAP his name. And 
+[dialogue] when you break a dialogue passage 
+[dialogue] with description, the standard is 
+[dialogue] to place (CONT’D) next to the 
+[dialogue] speaking character’s name.
+
+[action] April watches as a number of people find chairs in front of 
+[action] her.
+[page_number] 10.
+
+[character] APRIL (CONT’D)
+[dialogue] Of course, many writers have 
+[dialogue] dropped (CONT’D) from their 
+[dialogue] repertoire. I mean, it’s obvious 
+[dialogue] that I’m still speaking, isn’t it? 
+[dialogue] And that I never stopped speaking.
+
+[character] JOE (O.S.)
+[dialogue] (shouting from       
+[dialogue] beyond the door)
+[dialogue] Hey, April! C’mon! There’s a 
+[dialogue] barbeque at the Governor’s Mansion 
+[dialogue] and a shuttle leaving in two 
+[dialogue] minutes.
+
+[character] APRIL
+[parenthetical] (shouting)
+[dialogue] We haven’t mentioned master scenes.
+
+[action] A sheepish Joe slides back into the seminar room, slowly 
+[action] walking to the podium.
+
+[character] JOE
+[dialogue] That one I know. No CLOSE UPs, no 
+[dialogue] WIDE SHOTs, mostly no shots of any 
+[dialogue] kind. Just scene headers, 
+[dialogue] description and dialogue. And no 
+[dialogue] scene numbers. Those only belong on 
+[dialogue] shooting scripts.
+
+[character] APRIL
+[dialogue] It’s okay to sneak in a shot here 
+[dialogue] and there when it’s necessary to 
+[dialogue] highlight a moment or move the 
+[dialogue] action along.
+
+[character] JOE
+[dialogue] Okay. I can get behind that.
+
+[character] APRIL
+[dialogue] And don’t worry. I would never let 
+[dialogue] you miss a meal.
+
+[transition] FADE OUT.
+
+[centered] THE END
+[page_number] 11.
+
+[action] A FEW ADDITIONAL NOTES:
+
+[action] How closely should the format presented on the above pages be 
+[action] followed?
+
+[action] Close enough so that your script at least resembles these 
+[action] pages. That said, there is no absolute standard format within 
+[action] the U.S. film industry. The format used by professional 
+[action] screenwriters can vary considerably from writer to writer - 
+[action] but overall the format used by one professional writer 
+[action] generally resembles that used by another professional writer. 
+[action] Nuances may vary – margins slightly different, a dash here or 
+[action] there, parentheticals used this way or that or not at all – 
+[action] but overall, professional screenplays fit within or near 
+[action] these guidelines.
+
+[action] Clarity is the goal. If your script’s format can be easily 
+[action] read by anyone working in the film industry, then it falls 
+[action] within acceptable standards.
+
+[action] Do realize that “shooting scripts,” the form in which scripts 
+[action] are most often available online, in books and at libraries, 
+[action] are not the form in which most professional writers submit 
+[action] their scripts. Submission scripts, sales scripts, first draft 
+[action] scripts – all usually share certain characteristics: no scene 
+[action] numbers, few designated camera shots and sequences generally 
+[action] written in master scenes.
+
+[action] If you’re confused about which nuances are acceptable and 
+[action] which would push your script into an “out-of-format” 
+[action] category, you would do well to follow these guidelines and 
+[action] eliminate those questionable nuances.
+[page_number] 12.
